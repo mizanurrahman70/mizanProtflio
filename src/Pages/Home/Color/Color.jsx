@@ -29,10 +29,10 @@ const Color = () => {
             <button className="btn bg-[#333333] text-white">
               Primary Color: Charcoal (#333333)
             </button>
-            <button className="btn bg-[#E1E1E1] text-white">
+            <button className="btn bg-[#E1E1E1]">
               Secondary Color: Soft Gray (#E1E1E1)
             </button>
-            <button className="btn bg-[#FF6F61]">
+            <button className="btn bg-[#FF6F61] text-white">
               Accent Color: Coral (#FF6F61)
             </button>
             <button className="btn bg-[#FFFFFF]">
