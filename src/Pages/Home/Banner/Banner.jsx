@@ -7,7 +7,7 @@ import { MdDownload } from "react-icons/md";
 const Banner = () => {
   return (
     <div className="flex justify-center items-center container mx-auto gap-4">
-      <div className="w-1/2 space-y-4">
+      <div className="w-1/2 space-y-4 ">
         <p className=" font-openSans text-4xl font-extrabold  ">Hello,</p>
         <Typewriter></Typewriter>
         <section className="flex gap-4 text-secondary items-center text-2xl">
@@ -37,8 +37,8 @@ const Banner = () => {
           </a>
         </section>
       </div>
-      <div className="w-1/2 ">
-        <img src={bannerimg} alt="" />
+      <div className="w-1/2  flex justify-center  ">
+        <img className="h-[450px]" src={bannerimg} alt="" />
       </div>
     </div>
   );
