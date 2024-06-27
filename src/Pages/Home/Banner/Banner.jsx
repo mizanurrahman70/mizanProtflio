@@ -1,5 +1,5 @@
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
-import bannerimg from "../../../assets/banner-image.png";
+import bannerimg from "../../../assets/banner-image-nb.png";
 import Typewriter from "./Typewriter";
 import { FaXTwitter } from "react-icons/fa6";
 import { RiContactsFill } from "react-icons/ri";

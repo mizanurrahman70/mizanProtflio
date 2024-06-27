@@ -7,7 +7,7 @@ const Navbar = () => {
         <NavLink
           to="/"
           style={({ isActive }) =>
-            isActive ? { backgroundColor: "#47ccc8", color: "white" } : {}
+            isActive ? { backgroundColor: "#12B788", color: "white" } : {}
           }
           activeClassName="bg-primary text-white"
         >
@@ -18,7 +18,7 @@ const Navbar = () => {
         <NavLink
           to="/about"
           style={({ isActive }) =>
-            isActive ? { backgroundColor: "#47ccc8", color: "white" } : {}
+            isActive ? { backgroundColor: "#12B788", color: "white" } : {}
           }
           activeClassName="bg-primary text-white"
         >
@@ -29,7 +29,7 @@ const Navbar = () => {
         <NavLink
           to="/contact"
           style={({ isActive }) =>
-            isActive ? { backgroundColor: "#47ccc8", color: "white" } : {}
+            isActive ? { backgroundColor: "#12B788", color: "white" } : {}
           }
           activeClassName="bg-primary text-white"
         >
@@ -66,7 +66,7 @@ const Navbar = () => {
               {navLink}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <a className="btn btn-ghost text-xl text-primary">Naiem Hasan</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navLink}</ul>

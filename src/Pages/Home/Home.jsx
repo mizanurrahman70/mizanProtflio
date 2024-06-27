@@ -1,5 +1,5 @@
 import Banner from "./Banner/Banner";
-import Color from "./Color/Color";
+// import Color from "./Color/Color";
 
 const Home = () => {
   return (
