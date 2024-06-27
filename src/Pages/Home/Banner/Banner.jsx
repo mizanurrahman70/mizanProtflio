@@ -28,9 +28,13 @@ const Banner = () => {
           <button className="flex gap-2 justify-center items-center btn btn-primary rounded-full text-white">
             Contact Me <RiContactsFill />
           </button>
-          <button className="flex gap-2 justify-center items-center btn btn-primary rounded-full text-white">
+          <a
+            href="/MD_Naiemun_Hasan_MERN_STACK_DEVELOPER.pdf"
+            download
+            className="flex gap-2 justify-center items-center btn btn-primary rounded-full text-white"
+          >
             Get Resume <MdDownload />
-          </button>
+          </a>
         </section>
       </div>
       <div className="w-1/2 ">
