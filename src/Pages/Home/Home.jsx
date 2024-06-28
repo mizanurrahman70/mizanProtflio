@@ -1,13 +1,15 @@
 import SkillsImage from "../../../utils/SkillsImage";
+import About from "./About/About";
 import Banner from "./Banner/Banner";
-import Skills from "./Skills/Skills";
+import Project from "./Project/Project";
 
 const Home = () => {
   return (
     <div className="">
       <Banner></Banner>
-      {/* <Skills></Skills> */}
+      <About></About>
       <SkillsImage></SkillsImage>
+      <Project></Project>
     </div>
   );
 };
