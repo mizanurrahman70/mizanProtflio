@@ -1,6 +1,6 @@
 import ProjectCard from "./ProjectCard";
 
-const Project = () => {
+const Project = ({ projectList }) => {
   return (
     <div className="relative z-50  my-12 lg:my-24 container mx-auto">
       <div className="sticky top-10">
@@ -14,8 +14,10 @@ const Project = () => {
       </div>
 
       <div className="pt-24">
-        <div className="flex flex-col gap-6">
-          <ProjectCard></ProjectCard>
+        <div className="grid grid-cols-3 gap-6">
+          {projectList.map((project, index) => (
+            <ProjectCard project={project} key={index}></ProjectCard>
+          ))}
         </div>
       </div>
     </div>

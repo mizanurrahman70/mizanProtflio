@@ -1,53 +1,32 @@
-const ProjectCard = () => {
+import { Link } from "react-router-dom";
+
+const ProjectCard = ({ project }) => {
+  const { name, tools, role, description, img, live } = project;
   return (
-    <div className="from-[#0d1224] border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37] w-full">
-      <div className="flex flex-row">
-        <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-pink-500 to-violet-600"></div>
-        <div className="h-[1px] w-full bg-gradient-to-r from-violet-600 to-transparent"></div>
-      </div>
-      <div className="px-4 lg:px-8 py-3 lg:py-5 relative">
-        <div className="flex flex-row space-x-1 lg:space-x-2 absolute top-1/2 -translate-y-1/2">
-          <div className="h-2 w-2 lg:h-3 lg:w-3 rounded-full bg-red-400"></div>
-          <div className="h-2 w-2 lg:h-3 lg:w-3 rounded-full bg-orange-400"></div>
-          <div className="h-2 w-2 lg:h-3 lg:w-3 rounded-full bg-green-200"></div>
+    <div>
+      <div className="card card-compact bg-base-100 shadow-xl">
+        <figure className="relative">
+          <img src={img} alt="Shoes" />
+        </figure>
+        <div className="card-body">
+          <h2 className=" text-base font-semibold">{name}</h2>
+          <p className="text-sm">{description}</p>
+          <ul className="flex gap-2">
+            {tools.map((tool, toolIndex) => (
+              <li key={toolIndex}>&#34;{tool}&#34;</li>
+            ))}
+          </ul>
+          <p>
+            <span className=" font-semibold">My Role:</span> {role}
+          </p>
+          <div className=" absolute top-4 right-4">
+            <Link to={live} target="_blank" rel="noopener noreferrer">
+              <button className="btn btn-sm btn-primary text-white">
+                Live
+              </button>
+            </Link>
+          </div>
         </div>
-        <p className="text-center ml-3 text-[#16f2b3] text-base lg:text-xl"></p>
-      </div>
-      <div className="overflow-hidden border-t-[2px] border-indigo-900 px-4 lg:px-8 py-4 lg:py-8">
-        <code className="font-mono text-xs md:text-sm lg:text-base">
-          <div className="blink">
-            <span className="mr-2 text-pink-500">const</span>
-            <span className="mr-2 text-white">project</span>
-            <span className="mr-2 text-pink-500">=</span>
-            <span className="text-gray-400">{"{"}</span>
-          </div>
-          <div>
-            <span className="ml-4 lg:ml-8 mr-2 text-white">name:</span>
-            <span className="text-gray-400">{`'`}</span>
-            <span className="text-amber-300"></span>
-            <span className="text-gray-400">{`',`}</span>
-          </div>
-
-          <div className="ml-4 lg:ml-8 mr-2">
-            <span className=" text-white">tools:</span>
-            <span className="text-gray-400">{` ['`}</span>
-
-            <span className="text-gray-400">{"],"}</span>
-          </div>
-          <div>
-            <span className="ml-4 lg:ml-8 mr-2 text-white">myRole:</span>
-            <span className="text-orange-400"></span>
-            <span className="text-gray-400">,</span>
-          </div>
-          <div className="ml-4 lg:ml-8 mr-2">
-            <span className="text-white">Description:</span>
-            <span className="text-cyan-400"></span>
-            <span className="text-gray-400">,</span>
-          </div>
-          <div>
-            <span className="text-gray-400">{`};`}</span>
-          </div>
-        </code>
       </div>
     </div>
   );
