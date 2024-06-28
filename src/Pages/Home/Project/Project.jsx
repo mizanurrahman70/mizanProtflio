@@ -1,4 +1,5 @@
 import ProjectCard from "./ProjectCard";
+import PropTypes from "prop-types";
 
 const Project = ({ projectList }) => {
   return (
@@ -22,6 +23,19 @@ const Project = ({ projectList }) => {
       </div>
     </div>
   );
+};
+
+Project.propTypes = {
+  projectList: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      tools: PropTypes.arrayOf(PropTypes.string).isRequired,
+      role: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+      img: PropTypes.string.isRequired,
+      live: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 };
 
 export default Project;

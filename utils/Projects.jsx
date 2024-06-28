@@ -4,7 +4,7 @@ const Projects = () => {
   const projectList = [
     {
       name: "CozyStay Hotel Booking Website",
-      tools: ["React.js", "Node.js", "Express.js", "MongoDB"],
+      tools: ["React.js", "Node.js", "Firebase", "MongoDB"],
       role: "Full Stack Developer",
       description:
         "Developed a hotel booking platform with responsive front-end, secure user logins, and dynamic features like room filtering and real-time availability updates.",
@@ -13,7 +13,8 @@ const Projects = () => {
     },
     {
       name: "Diagnostic Center Management System",
-      tools: ["React.js", "Node.js", "Express.js", "Firebase"],
+      tools: ["React.js", "Node.js", "Firebase", "MongoDB"],
+
       role: "Full Stack Developer",
       description:
         "Streamlined diagnostic center operations with user authentication, profile management, responsive design, and dynamic admin features.",
@@ -22,7 +23,8 @@ const Projects = () => {
     },
     {
       name: "South Travel - Tourism Management Website",
-      tools: ["React.js", "Node.js", "MongoDB", "Firebase"],
+      tools: ["React.js", "Node.js", "Firebase", "MongoDB"],
+
       role: "Full Stack Developer",
       description:
         "Built a tourism management site with responsive design, secure authentication, and interactive maps for Southeast Asia travel details.",

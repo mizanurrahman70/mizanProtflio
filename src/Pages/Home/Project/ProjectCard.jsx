@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const ProjectCard = ({ project }) => {
   const { name, tools, role, description, img, live } = project;
@@ -30,6 +31,17 @@ const ProjectCard = ({ project }) => {
       </div>
     </div>
   );
+};
+
+ProjectCard.propTypes = {
+  project: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    tools: PropTypes.arrayOf(PropTypes.string).isRequired,
+    role: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    img: PropTypes.string.isRequired,
+    live: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default ProjectCard;
