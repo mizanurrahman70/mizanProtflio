@@ -90,7 +90,7 @@ const Navbar = () => {
             </ul>
           </div>
           <Link to="/">
-            <a className="text-primary text-2xl font-bold">Naiem Hasan</a>
+            <a className="text-primary lg:text-2xl font-bold">Naiem Hasan</a>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
