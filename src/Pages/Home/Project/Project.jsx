@@ -5,9 +5,9 @@ import PropTypes from "prop-types";
 
 const Project = () => {
   return (
-    <div className="lg:relative z-50  my-12 lg:my-24 container mx-auto">
-      <div className="lg:sticky top-10">
-        <div className="w-[80px] h-[80px] bg-violet-100 rounded-full absolute -top-3 left-0 translate-x-1/2 filter blur-3xl  opacity-30"></div>
+    <div className="  my-5 container mx-auto">
+      <div className=" top-10">
+        <div className="w-[80px] h-[80px] bg-violet-100 rounded-full  -top-3 left-0 translate-x-1/2 filter blur-3xl  opacity-30"></div>
         <div className="flex items-center justify-start relative">
           <span className=" bg-primary absolute left-0  w-fit text-white px-5 py-3 text-xl rounded-md">
             PROJECTS
@@ -16,7 +16,7 @@ const Project = () => {
         </div>
       </div>
 
-      <div className="pt-24">
+      <div className="lg:pt-24 pt-14">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {Projects.map((project) => (
             <div
@@ -38,6 +38,11 @@ const Project = () => {
                   <span className=" font-semibold">My Role:</span>{" "}
                   {project.role}
                 </p>
+                {/* <div className="flex justify-between gap-4">
+                  <button className="btn btn-primary">Live Link</button>
+                  <button className="btn btn-primary">Client Link</button>
+                  <button className="btn btn-primary">Server Link</button>
+                </div> */}
                 <div className=" absolute top-4 right-4">
                   <Link
                     to={project.live}
