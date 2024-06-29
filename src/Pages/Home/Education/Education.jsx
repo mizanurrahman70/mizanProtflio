@@ -15,11 +15,11 @@ const Education = () => {
           <span className="w-24 h-[2px] bg-primary"></span>
         </div>
       </div>
-      <div className="mb-10 gap-10 lg:flex justify-center items-center">
-        <section className="lg:w-1/2">
+      <div className="mb-10 gap-10 lg:flex md:flex justify-center items-center">
+        <section className="lg:w-1/2 md:w-1/2">
           <AnimationLottie className="lg:w-3/5" animationData={lottieFile} />
         </section>
-        <section className="lg:w-1/2 grid grid-cols-1 gap-4">
+        <section className="lg:w-1/2 md:w-1/2 grid grid-cols-1 gap-4">
           {educations.map((education, index) => (
             <div
               key={index}
