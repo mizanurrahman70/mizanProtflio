@@ -5,7 +5,7 @@ import { FaGraduationCap } from "react-icons/fa";
 
 const Education = () => {
   return (
-    <div className="container mx-auto">
+    <div id="education" className="container mx-auto">
       <div className="flex justify-center">
         <div className="flex items-center">
           <span className="w-24 h-[2px] bg-primary"></span>

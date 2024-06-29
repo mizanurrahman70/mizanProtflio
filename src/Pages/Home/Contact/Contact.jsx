@@ -9,7 +9,7 @@ import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
-    <div className="my-12 lg:my-16 relative container mx-auto">
+    <div id="#contact" className="my-12 lg:my-16 relative container mx-auto">
       <div className="hidden lg:flex flex-col items-center absolute top-24 -right-8">
         <span className="bg-primary w-fit text-white rotate-90 p-2 px-5 text-xl rounded-md">
           CONTACT

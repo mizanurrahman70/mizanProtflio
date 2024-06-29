@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const navLink = (
@@ -27,6 +27,51 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink
+          to="/skills"
+          style={({ isActive }) =>
+            isActive ? { backgroundColor: "#12B788", color: "white" } : {}
+          }
+          activeClassName="bg-primary text-white"
+        >
+          Skills
+        </NavLink>
+      </li>
+
+      <li>
+        <NavLink
+          to="/projects"
+          style={({ isActive }) =>
+            isActive ? { backgroundColor: "#12B788", color: "white" } : {}
+          }
+          activeClassName="bg-primary text-white"
+        >
+          Projects
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/education"
+          style={({ isActive }) =>
+            isActive ? { backgroundColor: "#12B788", color: "white" } : {}
+          }
+          activeClassName="bg-primary text-white"
+        >
+          Education
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/blog"
+          style={({ isActive }) =>
+            isActive ? { backgroundColor: "#12B788", color: "white" } : {}
+          }
+          activeClassName="bg-primary text-white"
+        >
+          Blog
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
           to="/contact"
           style={({ isActive }) =>
             isActive ? { backgroundColor: "#12B788", color: "white" } : {}
@@ -40,7 +85,7 @@ const Navbar = () => {
   );
   return (
     <div className="bg-base-100">
-      <div className="navbar container mx-auto ">
+      <div className="navbar container mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -66,13 +111,12 @@ const Navbar = () => {
               {navLink}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl text-primary">Naiem Hasan</a>
+          <Link to="/">
+            <a className="text-primary font-bold">Naiem Hasan</a>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navLink}</ul>
-        </div>
-        <div className="navbar-end">
-          <a className="btn">Button</a>
         </div>
       </div>
     </div>

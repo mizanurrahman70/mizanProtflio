@@ -3,34 +3,51 @@ import Typewriter from "./Typewriter";
 import { FaXTwitter } from "react-icons/fa6";
 import { RiContactsFill } from "react-icons/ri";
 import { MdDownload } from "react-icons/md";
+import { personalData } from "/utils/personal-data.js";
+
 const Banner = () => {
   return (
-    <div className="flex justify-center items-center container mx-auto gap-4 my-10">
-      <div className="w-1/2 space-y-4 ">
+    <div
+      id="#home"
+      className="flex justify-center items-center container mx-auto gap-4 my-10"
+    >
+      <div className="w-1/2 space-y-6 ">
         <p className=" font-openSans text-4xl font-extrabold  ">Hello,</p>
         <Typewriter></Typewriter>
         <section className="flex gap-4 text-secondary items-center text-2xl">
-          <a href="">
+          <a
+            className="hover:text-secondary hover:scale-110 transition-all duration-300 cursor-pointer"
+            href={personalData.github}
+          >
             <FaGithub />
           </a>
-          <a href="">
+          <a
+            className="hover:text-secondary hover:scale-110 transition-all duration-300 cursor-pointer"
+            href={personalData.linkedIn}
+          >
             <FaLinkedin />
           </a>
-          <a href="">
+          <a
+            className="hover:text-secondary hover:scale-110 transition-all duration-300 cursor-pointer"
+            href={personalData.facebook}
+          >
             <FaFacebook />
           </a>
-          <a href="">
+          <a
+            className="hover:text-secondary hover:scale-110 transition-all duration-300 cursor-pointer"
+            href={personalData.twitter}
+          >
             <FaXTwitter />
           </a>
         </section>
         <section className="flex gap-4 items-center">
-          <button className="flex gap-2 justify-center items-center btn btn-primary rounded-full text-white">
+          <button className="flex gap-2 justify-center items-center btn bg-primary border-none rounded-full text-white hover:bg-secondary hover:scale-110 transition-all duration-300 cursor-pointer">
             Contact Me <RiContactsFill />
           </button>
           <a
             href="/MD_Naiemun_Hasan_MERN_STACK_DEVELOPER.pdf"
             download
-            className="flex gap-2 justify-center items-center btn btn-primary rounded-full text-white"
+            className="flex gap-2 justify-center items-center btn border-none btn-primary rounded-full text-white hover:bg-secondary hover:scale-110 transition-all duration-300 cursor-pointer"
           >
             Get Resume <MdDownload />
           </a>

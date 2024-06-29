@@ -63,7 +63,9 @@ const ContactForm = () => {
         </div>
 
         <div className="form-control mt-6">
-          <button className="btn btn-secondary text-white">Send Message</button>
+          <button className="btn btn-secondary border-none text-white hover:bg-primary hover:scale-110 transition-all duration-300 cursor-pointer">
+            Send Message
+          </button>
         </div>
       </form>
     </div>

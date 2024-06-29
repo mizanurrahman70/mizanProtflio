@@ -44,7 +44,7 @@ const Project = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button className="btn btn-sm btn-primary text-white">
+                    <button className="btn btn-sm border-none bg-secondary text-white hover:bg-primary hover:scale-110 transition-all duration-300 cursor-pointer">
                       Live
                     </button>
                   </Link>
