@@ -1,6 +1,6 @@
 const Blog = () => {
   return (
-    <div>
+    <div className="container mx-auto my-10">
       <div className="flex justify-center">
         <div className="flex items-center">
           <span className="w-24 h-[2px] bg-primary"></span>
@@ -10,6 +10,7 @@ const Blog = () => {
           <span className="w-24 h-[2px] bg-primary"></span>
         </div>
       </div>
+      <p>adding soon</p>
     </div>
   );
 };
