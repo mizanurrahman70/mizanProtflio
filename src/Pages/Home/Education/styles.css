@@ -1,0 +1,52 @@
+/* styles.css */
+.steps {
+  list-style-type: none;
+}
+
+.steps-vertical > li {
+  margin-bottom: 20px;
+}
+
+.step {
+  position: relative;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 300px;
+}
+
+.step-right {
+  text-align: right;
+  margin-left: auto;
+}
+
+.step-left {
+  text-align: left;
+  margin-right: auto;
+}
+
+.step-content {
+  position: relative;
+  z-index: 1;
+}
+
+.step::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #007bff;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.step-left::before {
+  left: -5px;
+}
+
+.step-right::before {
+  right: -5px;
+}
