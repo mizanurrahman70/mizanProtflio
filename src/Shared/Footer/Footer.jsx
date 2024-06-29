@@ -13,8 +13,9 @@ const Footer = () => {
           <p className="text-sm">
             © Developer Portfolio by{" "}
             <Link
+              to="https://www.linkedin.com/in/naiemjoy1/"
               target="_blank"
-              href="https://www.linkedin.com/in/abu-said-bd/"
+              href=""
               className=" text-secondary"
             >
               Naiem Hasan
@@ -23,7 +24,7 @@ const Footer = () => {
           <div className="flex items-center gap-5">
             <Link
               target="_blank"
-              href="https://github.com/said7388/developer-portfolio"
+              to="https://github.com/naiemjoy1/naiem_hasan_client"
               className="flex items-center gap-2 uppercase hover:text-[#16f2b3]"
             >
               <IoStar />
@@ -31,7 +32,7 @@ const Footer = () => {
             </Link>
             <Link
               target="_blank"
-              href="https://github.com/said7388/developer-portfolio/fork"
+              to="https://github.com/naiemjoy1/naiem_hasan_client/fork"
               className="flex items-center gap-2 uppercase hover:text-[#16f2b3]"
             >
               <CgGitFork />
