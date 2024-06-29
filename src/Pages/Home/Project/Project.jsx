@@ -1,7 +1,9 @@
-import ProjectCard from "./ProjectCard";
+import { Link } from "react-router-dom";
+import { Projects } from "/utils/Projects.js";
+
 import PropTypes from "prop-types";
 
-const Project = ({ projectList }) => {
+const Project = () => {
   return (
     <div className="relative z-50  my-12 lg:my-24 container mx-auto">
       <div className="sticky top-10">
@@ -16,8 +18,39 @@ const Project = ({ projectList }) => {
 
       <div className="pt-24">
         <div className="grid grid-cols-3 gap-6">
-          {projectList.map((project, index) => (
-            <ProjectCard project={project} key={index}></ProjectCard>
+          {Projects.map((project) => (
+            <div
+              key={project.id}
+              className="card card-compact bg-base-100 shadow-xl"
+            >
+              <figure className="relative">
+                <img src={project.img} alt="Shoes" />
+              </figure>
+              <div className="card-body">
+                <h2 className=" text-base font-semibold">{project.name}</h2>
+                <p className="text-sm">{project.description}</p>
+                <ul className="flex gap-2">
+                  {project.tools.map((tool, toolIndex) => (
+                    <li key={toolIndex}>&#34;{tool}&#34;</li>
+                  ))}
+                </ul>
+                <p>
+                  <span className=" font-semibold">My Role:</span>{" "}
+                  {project.role}
+                </p>
+                <div className=" absolute top-4 right-4">
+                  <Link
+                    to={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="btn btn-sm btn-primary text-white">
+                      Live
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
           ))}
         </div>
       </div>
