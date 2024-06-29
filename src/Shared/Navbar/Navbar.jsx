@@ -1,85 +1,63 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const navLink = (
     <>
       <li>
-        <NavLink
-          to="/"
-          style={({ isActive }) =>
-            isActive ? { backgroundColor: "#12B788", color: "white" } : {}
-          }
-          activeClassName="bg-primary text-white"
+        <a
+          href="#home"
+          className="hover:text-white hover:bg-secondary cursor-pointer"
         >
           Home
-        </NavLink>
+        </a>
       </li>
       <li>
-        <NavLink
-          to="/about"
-          style={({ isActive }) =>
-            isActive ? { backgroundColor: "#12B788", color: "white" } : {}
-          }
-          activeClassName="bg-primary text-white"
+        <a
+          href="#about"
+          className="hover:text-white hover:bg-secondary cursor-pointer"
         >
           About
-        </NavLink>
+        </a>
       </li>
       <li>
-        <NavLink
-          to="/skills"
-          style={({ isActive }) =>
-            isActive ? { backgroundColor: "#12B788", color: "white" } : {}
-          }
-          activeClassName="bg-primary text-white"
+        <a
+          href="#skills"
+          className="hover:text-white hover:bg-secondary cursor-pointer"
         >
           Skills
-        </NavLink>
+        </a>
       </li>
-
       <li>
-        <NavLink
-          to="/projects"
-          style={({ isActive }) =>
-            isActive ? { backgroundColor: "#12B788", color: "white" } : {}
-          }
-          activeClassName="bg-primary text-white"
+        <a
+          href="#projects"
+          className="hover:text-white hover:bg-secondary cursor-pointer"
         >
           Projects
-        </NavLink>
+        </a>
       </li>
       <li>
-        <NavLink
-          to="/education"
-          style={({ isActive }) =>
-            isActive ? { backgroundColor: "#12B788", color: "white" } : {}
-          }
-          activeClassName="bg-primary text-white"
+        <a
+          href="#education"
+          className="hover:text-white hover:bg-secondary cursor-pointer"
         >
           Education
-        </NavLink>
+        </a>
       </li>
       <li>
-        <NavLink
-          to="/blog"
-          style={({ isActive }) =>
-            isActive ? { backgroundColor: "#12B788", color: "white" } : {}
-          }
-          activeClassName="bg-primary text-white"
+        <a
+          href="#blog"
+          className="hover:text-white hover:bg-secondary cursor-pointer"
         >
           Blog
-        </NavLink>
+        </a>
       </li>
       <li>
-        <NavLink
-          to="/contact"
-          style={({ isActive }) =>
-            isActive ? { backgroundColor: "#12B788", color: "white" } : {}
-          }
-          activeClassName="bg-primary text-white"
+        <a
+          href="#contact"
+          className="hover:text-white hover:bg-secondary cursor-pointer"
         >
           Contact
-        </NavLink>
+        </a>
       </li>
     </>
   );
@@ -112,7 +90,7 @@ const Navbar = () => {
             </ul>
           </div>
           <Link to="/">
-            <a className="text-primary font-bold">Naiem Hasan</a>
+            <a className="text-primary text-2xl font-bold">Naiem Hasan</a>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
