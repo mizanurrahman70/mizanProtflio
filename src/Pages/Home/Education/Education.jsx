@@ -5,7 +5,7 @@ import { FaGraduationCap } from "react-icons/fa";
 
 const Education = () => {
   return (
-    <div id="education" className="container mx-auto">
+    <div className="container mx-auto">
       <div className="flex justify-center">
         <div className="flex items-center">
           <span className="w-24 h-[2px] bg-primary"></span>
@@ -15,21 +15,23 @@ const Education = () => {
           <span className="w-24 h-[2px] bg-primary"></span>
         </div>
       </div>
-      <div className="mb-10 gap-10 flex justify-center items-center">
-        <section className="w-1/2">
-          <AnimationLottie className=" w-3/5" animationData={lottieFile} />
+      <div className="mb-10 gap-10 lg:flex justify-center items-center">
+        <section className="lg:w-1/2">
+          <AnimationLottie className="lg:w-3/5" animationData={lottieFile} />
         </section>
-        <section className="w-1/2 grid grid-cols-1 gap-4">
+        <section className="lg:w-1/2 grid grid-cols-1 gap-4">
           {educations.map((education, index) => (
             <div
               key={index}
-              className=" bg-secondary text-white px-10 py-2 rounded-xl"
+              className=" bg-secondary text-white lg:px-10 px-4 py-2 rounded-xl"
             >
-              <p className=" text-center">{education.duration}</p>
+              <p className="text-center">{education.duration}</p>
               <div className="flex items-center gap-4 mt-2 mb-4">
-                <FaGraduationCap className=" text-5xl"></FaGraduationCap>
+                <FaGraduationCap className="lg:text-5xl text-3xl"></FaGraduationCap>
                 <div>
-                  <p className="text-xl font-medium">{education.title}</p>
+                  <p className="lg:text-xl font-medium text-sm">
+                    {education.title}
+                  </p>
                   <p className=" text-sm">{education.institution}</p>
                 </div>
               </div>

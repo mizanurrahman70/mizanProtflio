@@ -8,7 +8,7 @@ import Skills from "./Skills/Skills.jsx";
 
 const Home = () => {
   return (
-    <div className="">
+    <div className="px-6">
       <Banner></Banner>
       <About></About>
       <Skills></Skills>

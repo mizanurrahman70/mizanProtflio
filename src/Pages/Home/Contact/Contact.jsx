@@ -42,7 +42,7 @@ const Contact = () => {
             />
             <span>{personalData.address}</span>
           </p>
-          <div className="mt-5 flex items-center gap-5 lg:gap-10">
+          <div className="mt-5 flex justify-center lg:justify-start items-center gap-5 lg:gap-10">
             <Link target="_blank" href={personalData.github}>
               <IoLogoGithub
                 className="bg-secondary  p-3 rounded-full hover:bg-primary hover:scale-110 transition-all duration-300 text-white cursor-pointer"

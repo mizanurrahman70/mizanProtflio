@@ -19,7 +19,7 @@ const ContactForm = () => {
         className="card-body border border-secondary rounded-xl"
       >
         <p>
-          If you have any questions or concerns, please don&#39t hesitate to
+          If you have any questions or concerns, please don&#39;t hesitate to
           contact me. I am open to any work opportunities that align with my
           skills and interests.
         </p>

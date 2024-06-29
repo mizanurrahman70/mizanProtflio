@@ -4,7 +4,7 @@ import Footer from "../Shared/Footer/Footer";
 
 const Main = () => {
   return (
-    <div className=" font-openSans">
+    <div className="font-openSans">
       <Navbar></Navbar>
       <Outlet></Outlet>
       <Footer></Footer>

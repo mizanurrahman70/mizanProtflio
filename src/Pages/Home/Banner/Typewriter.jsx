@@ -10,7 +10,7 @@ const Typewriter = () => {
 
   return (
     <div>
-      <h1 className=" font-openSans lg:text-4xl text-4xl font-bold text-left">
+      <h1 className=" font-openSans lg:text-4xl text-2xl font-bold text-left">
         This is <span className=" text-secondary">NAIEM HASAN</span>, I&#39;m a{" "}
         <br />
         <span className=" text-primary"> {typeEffect} </span>

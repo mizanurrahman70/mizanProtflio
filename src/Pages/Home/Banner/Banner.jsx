@@ -9,10 +9,12 @@ const Banner = () => {
   return (
     <div
       id="#home"
-      className="flex justify-center items-center container mx-auto gap-4 my-10"
+      className="grid grid-cols-1 lg:grid-cols-2 justify-center items-center container mx-auto gap-4 lg:my-10"
     >
-      <div className="w-1/2 space-y-6 ">
-        <p className=" font-openSans text-4xl font-extrabold  ">Hello,</p>
+      <div className=" lg:space-y-6 space-y-4 ">
+        <p className=" font-openSans lg:text-4xl text-2xl font-extrabold  ">
+          Hello,
+        </p>
         <Typewriter></Typewriter>
         <section className="flex gap-4 text-secondary items-center text-2xl">
           <a
@@ -40,7 +42,7 @@ const Banner = () => {
             <FaXTwitter />
           </a>
         </section>
-        <section className="flex gap-4 items-center">
+        <section className="flex justify-center lg:justify-start gap-4 items-center">
           <button className="flex gap-2 justify-center items-center btn bg-primary border-none rounded-full text-white hover:bg-secondary hover:scale-110 transition-all duration-300 cursor-pointer">
             Contact Me <RiContactsFill />
           </button>
@@ -53,8 +55,8 @@ const Banner = () => {
           </a>
         </section>
       </div>
-      <div className="w-1/2  flex justify-center  ">
-        <div className="order-1 lg:order-2 from-[#0d1224] border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37]">
+      <div className="  lg:flex justify-center">
+        <div className="order-1 lg:order-2 from-[#0d1224] border-[#1b2c68a0] rounded-lg border bg-gradient-to-r to-[#0a0d37]">
           <div className="flex flex-row">
             <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-pink-500 to-violet-600"></div>
             <div className="h-[1px] w-full bg-gradient-to-r from-violet-600 to-transparent"></div>
@@ -85,16 +87,8 @@ const Banner = () => {
                 <span className="text-gray-400">{`['`}</span>
                 <span className="text-amber-300">React</span>
                 <span className="text-gray-400">{"', '"}</span>
-                {/* <span className="text-amber-300">Javascript</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Redux</span>
-                <span className="text-gray-400">{"', '"}</span> */}
                 <span className="text-amber-300">Express</span>
                 <span className="text-gray-400">{"', '"}</span>
-                {/* <span className="text-amber-300">NestJS</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">MySql</span>
-                <span className="text-gray-400">{"', '"}</span> */}
                 <span className="text-amber-300">MongoDB</span>
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">Node JS</span>

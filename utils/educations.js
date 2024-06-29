@@ -9,6 +9,6 @@ export const educations = [
     id: 2,
     title: "Higher Secondary Certificate",
     duration: "2012 - 2014",
-    institution: "milestone college",
+    institution: "Milestone College",
   },
 ];
