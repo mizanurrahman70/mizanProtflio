@@ -43,26 +43,26 @@ const Contact = () => {
             <span>{personalData.address}</span>
           </p>
           <div className="mt-5 flex justify-center lg:justify-start items-center gap-5 lg:gap-10">
-            <Link target="_blank" href={personalData.github}>
+            <Link to={personalData.github} target="_blank" href="">
               <IoLogoGithub
                 className="bg-secondary  p-3 rounded-full hover:bg-primary hover:scale-110 transition-all duration-300 text-white cursor-pointer"
                 size={48}
               />
             </Link>
-            <Link target="_blank" href={personalData.linkedIn}>
+            <Link to={personalData.linkedIn} target="_blank" href="">
               <BiLogoLinkedin
                 className="bg-secondary p-3 rounded-full hover:bg-primary hover:scale-110 transition-all duration-300 text-white cursor-pointer"
                 size={48}
               />
             </Link>
-            <Link target="_blank" href={personalData.twitter}>
+            <Link to={personalData.twitter} target="_blank" href="">
               <FaXTwitter
                 className="bg-secondary p-3 rounded-full hover:bg-primary hover:scale-110 transition-all duration-300 text-white cursor-pointer"
                 size={48}
               />
             </Link>
 
-            <Link target="_blank" href={personalData.facebook}>
+            <Link to={personalData.facebook} target="_blank" href="">
               <FaFacebook
                 className="bg-secondary p-3 rounded-full hover:bg-primary hover:scale-110 transition-all duration-300 text-white cursor-pointer"
                 size={48}
