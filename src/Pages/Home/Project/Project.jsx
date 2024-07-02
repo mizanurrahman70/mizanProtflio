@@ -32,12 +32,12 @@ const Project = () => {
                 <p className="text-sm">{project.description}</p>
                 <div className="flex items-center gap-2">
                   <Link to={project.client}>
-                    <button className="btn btn-primary btn-sm font-normal text-white">
+                    <button className="btn btn-primary btn-sm font-normal text-white border-none hover:bg-secondary hover:scale-110 transition-all duration-300 cursor-pointer">
                       Client Side
                     </button>
                   </Link>
                   <Link to={project.server}>
-                    <button className="btn btn-primary btn-sm font-normal text-white">
+                    <button className="btn btn-primary btn-sm font-normal text-white border-none hover:bg-secondary hover:scale-110 transition-all duration-300 cursor-pointer">
                       Server Side
                     </button>
                   </Link>
