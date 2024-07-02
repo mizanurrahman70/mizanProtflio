@@ -19,7 +19,8 @@ const Project = () => {
       <div className="lg:pt-20 pb-20 pt-14">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {Projects.map((project) => (
-            <div
+            <Link
+              to={project.live}
               key={project.id}
               className="card card-compact bg-base-100 shadow-xl"
             >
@@ -29,7 +30,20 @@ const Project = () => {
               <div className="card-body">
                 <h2 className=" text-base font-semibold">{project.name}</h2>
                 <p className="text-sm">{project.description}</p>
+                <div className="flex items-center gap-2">
+                  <Link to={project.client}>
+                    <button className="btn btn-primary btn-sm font-normal text-white">
+                      Client Side
+                    </button>
+                  </Link>
+                  <Link to={project.server}>
+                    <button className="btn btn-primary btn-sm font-normal text-white">
+                      Server Side
+                    </button>
+                  </Link>
+                </div>
                 <ul className="flex gap-2">
+                  <li className=" font-semibold">Tools:</li>
                   {project.tools.map((tool, toolIndex) => (
                     <li key={toolIndex}>&#34;{tool}&#34;</li>
                   ))}
@@ -38,11 +52,6 @@ const Project = () => {
                   <span className=" font-semibold">My Role:</span>{" "}
                   {project.role}
                 </p>
-                {/* <div className="flex justify-between gap-4">
-                  <button className="btn btn-primary">Live Link</button>
-                  <button className="btn btn-primary">Client Link</button>
-                  <button className="btn btn-primary">Server Link</button>
-                </div> */}
                 <div className=" absolute top-4 right-4">
                   <Link
                     to={project.live}
@@ -55,7 +64,7 @@ const Project = () => {
                   </Link>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

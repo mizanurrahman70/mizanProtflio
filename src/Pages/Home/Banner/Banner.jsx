@@ -43,8 +43,14 @@ const Banner = () => {
           </a>
         </section>
         <section className="flex justify-center lg:justify-start gap-4 items-center">
-          <button className="flex gap-2 justify-center items-center btn bg-primary border-none rounded-full text-white hover:bg-secondary hover:scale-110 transition-all duration-300 cursor-pointer">
-            Contact Me <RiContactsFill />
+          <button className=" btn bg-primary border-none rounded-full text-white hover:bg-secondary hover:scale-110 transition-all duration-300 cursor-pointer">
+            {" "}
+            <a
+              href="#contact"
+              className="hover:text-white hover:bg-secondary cursor-pointer flex gap-2 justify-center items-center"
+            >
+              Contact Me <RiContactsFill />
+            </a>
           </button>
           <a
             href="/MD_Naiemun_Hasan_MERN_STACK_DEVELOPER.pdf"
