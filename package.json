@@ -17,6 +17,7 @@
     "@mui/icons-material": "^5.15.21",
     "@mui/lab": "^5.0.0-alpha.170",
     "@mui/material": "^5.15.21",
+    "axios": "^1.7.2",
     "firebase": "^10.12.2",
     "localforage": "^1.10.0",
     "lottie-react": "^2.4.0",
@@ -31,7 +32,8 @@
     "react-router-dom": "^6.24.0",
     "react-simple-typewriter": "^5.0.1",
     "react-vertical-timeline-component": "^3.6.0",
-    "sort-by": "^1.2.0"
+    "sort-by": "^1.2.0",
+    "sweetalert2": "^11.12.1"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",

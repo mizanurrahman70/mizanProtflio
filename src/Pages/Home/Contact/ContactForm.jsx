@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import Swal from "sweetalert2";
 
 const ContactForm = () => {
   const {
@@ -7,9 +8,37 @@ const ContactForm = () => {
     reset,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => {
+
+  const onSubmit = async (data) => {
     console.log(data);
-    reset();
+    try {
+      const response = await fetch(
+        "https://naiem-hasan-server.vercel.app/api/contact",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        }
+      );
+
+      if (response.ok) {
+        // console.log("Message sent successfully");
+        Swal.fire({
+          position: "top-end",
+          icon: "success",
+          title: "Your Message sent successfully",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+        reset();
+      } else {
+        console.error("Failed to send message");
+      }
+    } catch (error) {
+      console.error("Error sending message:", error);
+    }
   };
 
   return (
@@ -32,9 +61,9 @@ const ContactForm = () => {
             name="name"
             placeholder="Your Name"
             className="input input-bordered "
-            {...register("name", { required: true })}
+            {...register("name", { required: "Name is required" })}
           />
-          {errors.name && <span>This field is required</span>}
+          {errors.name && <span>{errors.name.message}</span>}
         </div>
         <div className="form-control">
           <label className="label">
@@ -45,21 +74,21 @@ const ContactForm = () => {
             name="email"
             placeholder="Your Email"
             className="input input-bordered"
-            {...register("email", { required: true })}
+            {...register("email", { required: "Email is required" })}
           />
-          {errors.email && <span>This field is required</span>}
+          {errors.email && <span>{errors.email.message}</span>}
         </div>
         <div className="form-control">
           <label className="label">
             <span className="label-text">Your Message</span>
           </label>
           <textarea
-            className="textarea textarea-bordered"
             name="message"
+            className="textarea textarea-bordered"
             placeholder="Your Message"
-            {...register("message", { required: true })}
+            {...register("message", { required: "Message is required" })}
           ></textarea>
-          {errors.message && <span>This field is required</span>}
+          {errors.message && <span>{errors.message.message}</span>}
         </div>
 
         <div className="form-control mt-6">
