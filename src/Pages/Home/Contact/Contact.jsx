@@ -10,11 +10,20 @@ import ContactForm from "./ContactForm";
 const Contact = () => {
   return (
     <div id="#contact" className="my-12 lg:my-16 relative container mx-auto">
-      <div className="hidden lg:flex flex-col items-center absolute top-24 -right-8">
-        <span className="bg-primary w-fit text-white rotate-90 p-2 px-5 text-xl rounded-md">
+      <div className="hidden lg:flex flex-col items-center lg:absolute top-40 -right-14">
+        <span className=" bg-primary w-fit text-white lg:rotate-90 p-2 px-5 text-xl rounded-md">
           CONTACT
         </span>
         <span className="h-36 w-[2px] bg-primary"></span>
+      </div>
+      <div className="lg:hidden flex justify-center my-5 lg:py-8">
+        <div className="flex  items-center">
+          <span className="w-24 h-[2px] bg-primary"></span>
+          <span className=" bg-primary w-fit text-white p-2 px-5 text-xl rounded-md">
+            CONTACT
+          </span>
+          <span className="w-24 h-[2px] bg-primary"></span>
+        </div>
       </div>
       <div className="grid grid-cols-1 justify-center items-center lg:grid-cols-2 gap-8 lg:gap-16">
         <div className="order-2 lg:order-1">
