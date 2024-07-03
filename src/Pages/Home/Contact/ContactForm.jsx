@@ -10,18 +10,15 @@ const ContactForm = () => {
   } = useForm();
 
   const onSubmit = async (data) => {
-    // console.log(data);
+    console.log(data);
     try {
-      const response = await fetch(
-        "https://naiem-hasan-server.vercel.app/api/contact",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(data),
-        }
-      );
+      const response = await fetch("http://localhost:3000/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
 
       if (response.ok) {
         // console.log("Message sent successfully");
@@ -64,6 +61,19 @@ const ContactForm = () => {
             {...register("name", { required: "Name is required" })}
           />
           {errors.name && <span>{errors.name.message}</span>}
+        </div>
+        <div className="form-control">
+          <label className="label">
+            <span className="label-text">Subject</span>
+          </label>
+          <input
+            type="text"
+            name="subject"
+            placeholder="Subject"
+            className="input input-bordered "
+            {...register("subject", { required: "Subject is required" })}
+          />
+          {errors.subject && <span>{errors.subject.message}</span>}
         </div>
         <div className="form-control">
           <label className="label">
