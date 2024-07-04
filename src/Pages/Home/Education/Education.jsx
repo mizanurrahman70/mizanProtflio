@@ -20,23 +20,20 @@ const Education = () => {
           <AnimationLottie className="lg:w-3/5" animationData={lottieFile} />
         </section>
         <section className="lg:w-1/2 md:w-1/2 grid grid-cols-1 gap-4">
-          {educations.map((education, index) => (
-            <div
-              key={index}
+        <div
               className=" bg-secondary text-white lg:px-10 px-4 py-2 rounded-xl"
             >
-              <p className="text-center">{education.duration}</p>
+              <p className="text-center">{2021 -2022}</p>
               <div className="flex items-center gap-4 mt-2 mb-4">
                 <FaGraduationCap className="lg:text-5xl text-3xl"></FaGraduationCap>
                 <div>
                   <p className="lg:text-xl font-medium text-sm">
-                    {education.title}
+                    {'Higher Secondary School Certificate'}
                   </p>
-                  <p className=" text-sm">{education.institution}</p>
+                  <p className=" text-sm">{"Bakshigonj Govt kiyamotullah collage"}</p>
                 </div>
               </div>
             </div>
-          ))}
         </section>
       </div>
     </div>

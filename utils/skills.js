@@ -10,10 +10,9 @@ import figmaIcon from "../public/svg/skills/figma.svg";
 import firebaseIcon from "../public/svg/skills/firebase.svg";
 import materialuiIcon from "../public/svg/skills/materialui.svg";
 import nextJSIcon from "../public/svg/skills/nextJS.svg";
-import photoshopIcon from "../public/svg/skills/photoshop.svg";
-import adobeXDIcon from "../public/svg/skills/adobe-xd.svg";
-import illustratorIcon from "../public/svg/skills/illustrator.svg";
-import wordpressIcon from "../public/svg/skills/wordpress.svg";
+
+
+
 
 export const skills = [
   { name: "HTML", Icon: htmlIcon },
@@ -26,10 +25,9 @@ export const skills = [
   { name: "Git", Icon: gitIcon },
   { name: "Firebase", Icon: firebaseIcon },
   { name: "MaterialUI", Icon: materialuiIcon },
-  { name: "Wordpress", Icon: wordpressIcon },
-  { name: "Photoshop", Icon: photoshopIcon },
-  { name: "Illustrator", Icon: illustratorIcon },
-  { name: "Adobe XD", Icon: adobeXDIcon },
+ 
+
+
   { name: "Figma", Icon: figmaIcon },
   { name: "Next Js", Icon: nextJSIcon },
 ];

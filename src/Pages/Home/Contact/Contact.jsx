@@ -35,43 +35,43 @@ const Contact = () => {
               className="bg-secondary text-white p-2 rounded-full hover:bg-primary hover:scale-110 transition-all duration-300 cursor-pointer"
               size={36}
             />
-            <span>{personalData.email}</span>
+            <span>{'mizanurrahman.dev70@gmail.com'}</span>
           </p>
           <p className="text-sm md:text-xl flex items-center gap-3">
             <MdPhone
               className="bg-secondary text-white p-2 rounded-full hover:bg-primary hover:scale-110 transition-all duration-300 cursor-pointer"
               size={36}
             />
-            <span>{personalData.phone}</span>
+            <span>{'+8801988637609'}</span>
           </p>
           <p className="text-sm md:text-xl flex items-center gap-3">
             <MdHome
               className="bg-secondary text-white p-2 rounded-full hover:bg-primary hover:scale-110 transition-all duration-300 cursor-pointer"
               size={36}
             />
-            <span>{personalData.address}</span>
+            <span>{"Bakshing ,jamalpur ,mymenshing "}</span>
           </p>
           <div className="mt-5 flex justify-center lg:justify-start items-center gap-5 lg:gap-10">
-            <Link to={personalData.github} target="_blank" href="">
+            <Link to={"https://github.com/mizanurrahman70"} target="_blank" href="">
               <IoLogoGithub
                 className="bg-secondary  p-3 rounded-full hover:bg-primary hover:scale-110 transition-all duration-300 text-white cursor-pointer"
                 size={48}
               />
             </Link>
-            <Link to={personalData.linkedIn} target="_blank" href="">
+            <Link to={"https://www.facebook.com/mizanurrahman.dev70/"} target="_blank" href="">
               <BiLogoLinkedin
                 className="bg-secondary p-3 rounded-full hover:bg-primary hover:scale-110 transition-all duration-300 text-white cursor-pointer"
                 size={48}
               />
             </Link>
-            <Link to={personalData.twitter} target="_blank" href="">
+            <Link to={"https://www.linkedin.com/in/mizanur-rahman70/"} target="_blank" href="">
               <FaXTwitter
                 className="bg-secondary p-3 rounded-full hover:bg-primary hover:scale-110 transition-all duration-300 text-white cursor-pointer"
                 size={48}
               />
             </Link>
 
-            <Link to={personalData.facebook} target="_blank" href="">
+            <Link to={"https://www.facebook.com/mizanurrahman.dev70/"} target="_blank" href="">
               <FaFacebook
                 className="bg-secondary p-3 rounded-full hover:bg-primary hover:scale-110 transition-all duration-300 text-white cursor-pointer"
                 size={48}

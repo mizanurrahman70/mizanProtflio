@@ -32,10 +32,10 @@ class CustomizedTimeline extends Component {
           </TimelineSeparator>
           <TimelineContent sx={{ py: "12px", px: 2 }}>
             <Typography variant="h6" component="span">
-              Bachelor in computer science and engineering
+            Higher Secondary School Certificate 
             </Typography>
             <Typography>
-              American International University - Bangladesh (AIUB)
+              Bakshigonj Govt Kiyamitullah collage
             </Typography>
           </TimelineContent>
         </TimelineItem>
@@ -56,9 +56,9 @@ class CustomizedTimeline extends Component {
           </TimelineSeparator>
           <TimelineContent sx={{ py: "12px", px: 2 }}>
             <Typography variant="h6" component="span">
-              Higher Secondary Certificate
+              2021 - 2022
             </Typography>
-            <Typography>Milestone College</Typography>
+            <Typography>Chandrabaz Rashidabegum school and collage</Typography>
           </TimelineContent>
         </TimelineItem>
       </Timeline>

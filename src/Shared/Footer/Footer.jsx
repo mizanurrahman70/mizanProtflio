@@ -13,18 +13,18 @@ const Footer = () => {
           <p className="text-sm">
             © Developer Portfolio by{" "}
             <Link
-              to="https://www.linkedin.com/in/naiemjoy1/"
+              to="https://github.com/mizanurrahman70"
               target="_blank"
               href=""
               className=" text-secondary"
             >
-              Naiem Hasan
+             Md Mizanur Rahman
             </Link>
           </p>
           <div className="flex items-center gap-5">
             <Link
               target="_blank"
-              to="https://github.com/naiemjoy1/naiem_hasan_client"
+              to="https://github.com/mizanurrahman70"
               className="flex items-center gap-2 uppercase hover:text-[#16f2b3]"
             >
               <IoStar />
@@ -32,7 +32,7 @@ const Footer = () => {
             </Link>
             <Link
               target="_blank"
-              to="https://github.com/naiemjoy1/naiem_hasan_client/fork"
+              to="https://github.com/mizanurrahman70"
               className="flex items-center gap-2 uppercase hover:text-[#16f2b3]"
             >
               <CgGitFork />

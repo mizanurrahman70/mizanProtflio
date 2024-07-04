@@ -16,7 +16,7 @@ const ContactForm = () => {
     setLoading(true);
     try {
       const response = await fetch(
-        "https://naiem-hasan-server.vercel.app/api/contact",
+        "",
         {
           method: "POST",
           headers: {

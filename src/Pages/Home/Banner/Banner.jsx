@@ -3,7 +3,7 @@ import Typewriter from "./Typewriter";
 import { FaXTwitter } from "react-icons/fa6";
 import { RiContactsFill } from "react-icons/ri";
 import { MdDownload } from "react-icons/md";
-import { personalData } from "/utils/personal-data.js";
+
 
 const Banner = () => {
   return (
@@ -19,25 +19,25 @@ const Banner = () => {
         <section className="flex gap-4 text-secondary items-center text-2xl">
           <a
             className="hover:text-secondary hover:scale-110 transition-all duration-300 cursor-pointer"
-            href={personalData.github}
+            href={'https://github.com/mizanurrahman70'}
           >
             <FaGithub />
           </a>
           <a
             className="hover:text-secondary hover:scale-110 transition-all duration-300 cursor-pointer"
-            href={personalData.linkedIn}
+            href={'https://www.linkedin.com/in/mizanur-rahman70/'}
           >
             <FaLinkedin />
           </a>
           <a
             className="hover:text-secondary hover:scale-110 transition-all duration-300 cursor-pointer"
-            href={personalData.facebook}
+            href={'https://www.facebook.com/mizanurrahman.dev70/'}
           >
             <FaFacebook />
           </a>
           <a
             className="hover:text-secondary hover:scale-110 transition-all duration-300 cursor-pointer"
-            href={personalData.twitter}
+            href={'https://x.com/i/flow/login?redirect_after_login=%2Fmizanur_70'}
           >
             <FaXTwitter />
           </a>
@@ -53,7 +53,7 @@ const Banner = () => {
             </a>
           </button>
           <a
-            href="/MD_Naiemun_Hasan_MERN_STACK_DEVELOPER.pdf"
+            href="/src/assets/MERN-STACK DEVELOPER.pdf"
             download
             className="flex gap-2 justify-center items-center btn border-none btn-primary rounded-full text-white hover:bg-secondary hover:scale-110 transition-all duration-300 cursor-pointer"
           >
@@ -85,7 +85,7 @@ const Banner = () => {
               <div>
                 <span className="ml-4 lg:ml-8 mr-2 text-white">name:</span>
                 <span className="text-gray-400">{`'`}</span>
-                <span className="text-amber-300">Naiem Hasan</span>
+                <span className="text-amber-300">Md Mizanur Rahman</span>
                 <span className="text-gray-400">{`',`}</span>
               </div>
               <div className="ml-4 lg:ml-8 mr-2">

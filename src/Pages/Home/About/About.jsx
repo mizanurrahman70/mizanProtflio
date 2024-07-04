@@ -1,4 +1,4 @@
-import bannerimg from "../../../assets/banner-image-nb.png";
+import bannerimg from "../../../assets/img.jpg";
 
 const About = () => {
   return (
@@ -24,7 +24,7 @@ const About = () => {
             Who I am?
           </p>
           <p className="text-center lg:text-left text-sm lg:text-lg md:text-left">
-            My name is Naiem Hasan. I am a professional and enthusiastic
+            My name is Md Mizanur Rahman. I am a professional and enthusiastic
             front-end developer with a passion for crafting dynamic and
             responsive web applications. I pride myself on being a quick learner
             with a strong self-learning attitude. Exploring new technologies and
@@ -32,7 +32,7 @@ const About = () => {
           </p>
         </div>
         <div className="flex justify-center order-1 lg:order-2">
-          <img className="lg:h-[450px]" src={bannerimg} alt="" />
+          <img className="lg:h-[450px] rounded-2xl" src={bannerimg} alt="" />
         </div>
       </div>
     </div>
