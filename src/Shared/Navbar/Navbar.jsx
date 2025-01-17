@@ -29,6 +29,14 @@ const Navbar = () => {
       </li>
       <li>
         <a
+          href="#experience"
+          className="hover:text-white hover:bg-secondary cursor-pointer"
+        >
+          Experience
+        </a>
+      </li>
+      <li>
+        <a
           href="#projects"
           className="hover:text-white hover:bg-secondary cursor-pointer"
         >

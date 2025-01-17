@@ -5,6 +5,7 @@ import Education from "./Education/Education";
 import Contact from "./Contact/Contact";
 import Blog from "./Blog/Blog.jsx";
 import Skills from "./Skills/Skills.jsx";
+import Experience from "./Experience/Experience.jsx";
 
 const Home = () => {
   return (
@@ -17,6 +18,9 @@ const Home = () => {
       </div>
       <div id="skills">
         <Skills />
+      </div>
+      <div id="experience">
+        <Experience/>
       </div>
       <div id="projects">
         <Projects />

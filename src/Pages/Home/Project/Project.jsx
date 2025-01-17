@@ -25,7 +25,7 @@ const Project = () => {
               className="card card-compact bg-base-100 shadow-xl"
             >
               <figure className="relative">
-                <img src={project.img} alt="Shoes" />
+                <img  classname='h-[419px] w-full' src={project.img} alt="Shoes" />
               </figure>
               <div className="card-body">
                 <h2 className=" text-base font-semibold">{project.name}</h2>

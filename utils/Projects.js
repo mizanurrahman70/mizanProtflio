@@ -1,4 +1,7 @@
 import cozyImg from "../src/assets/Project/care-quest.jpg";
+import fixIt from "../src/assets/Project/fixIT.png";
+import journeyTract from "../src/assets/Project/jurnyTract.png";
+import commercial from "../src/assets/Project/comarsila.png";
 
 export const Projects = [
   {
@@ -8,11 +11,11 @@ export const Projects = [
     role: "Full Stack Developer",
     description:
       "A full-stack Electronic Repairing Services web app where people can take and book services. Login system with firebase and private routes. Dashboard for users can see her activity, adding her product and .manage service etc.",
-    img: cozyImg,
+    img: fixIt,
     features: [
       "Specialization and Upskilling",
- 'Circular Economy Integration',
-"Remote Diagnostics and Repair",
+      'Circular Economy Integration',
+      "Remote Diagnostics and Repair",
 
     ],
     live: "https://eleven-daeee.web.app/",
@@ -26,7 +29,7 @@ export const Projects = [
     role: "Full Stack Developer",
     description:
       "A comprehensive full-stack web app where users can explore and book tourist sites. It includes a Firebase login system with private routes. Users can easily find and book tourist sites, add new spots, and sort their listings in ascending or descending order",
-    img: cozyImg,
+    img: journeyTract,
     features: [
       "This website is Travial",
       "use tousit sports",
@@ -39,14 +42,14 @@ export const Projects = [
   {
     id: 3,
     name: "South Travel - Tourism Management Website",
-    tools: ["React.js",  "Firebase", "MongoDB"],
+    tools: ["React.js", "Firebase", "MongoDB"],
     role: "Full Stack Developer",
     description:
       "Built a tourism management site with responsive design, secure authentication, and interactive maps for Southeast Asia travel details.",
-    img: cozyImg,
+    img: commercial,
     features: ["Dynamic Home Page", "User Management", "Personalization"],
     live: "https://commercialhub.netlify.app/",
     client: "https://github.com/mizanurrahman70/Journey-OfTrack-client",
-    
+
   },
 ];
