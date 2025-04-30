@@ -1,86 +1,120 @@
-import { MdAlternateEmail, MdHome, MdPhone } from "react-icons/md";
-import { personalData } from "/utils/personal-data.js";
-import { Link } from "react-router-dom";
-import { IoLogoGithub } from "react-icons/io";
-import { BiLogoLinkedin } from "react-icons/bi";
-import { FaXTwitter } from "react-icons/fa6";
+import { MdAlternateEmail, MdPhone, MdLocationOn, MdEmergency } from "react-icons/md";
+import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io";
 import { FaFacebook } from "react-icons/fa";
-import ContactForm from "./ContactForm";
 
 const Contact = () => {
-  return (
-    <div id="#contact" className="my-12 lg:my-16 relative container mx-auto">
-      <div className="hidden lg:flex flex-col items-center lg:absolute top-40 -right-14">
-        <span className=" bg-primary w-fit text-white lg:rotate-90 p-2 px-5 text-xl rounded-md">
-          CONTACT
-        </span>
-        <span className="h-36 w-[2px] bg-primary"></span>
-      </div>
-      <div className="lg:hidden flex justify-center my-5 lg:py-8">
-        <div className="flex  items-center">
-          <span className="w-24 h-[2px] bg-primary"></span>
-          <span className=" bg-primary w-fit text-white p-2 px-5 text-xl rounded-md">
-            CONTACT
-          </span>
-          <span className="w-24 h-[2px] bg-primary"></span>
-        </div>
-      </div>
-      <div className="grid grid-cols-1 justify-center items-center lg:grid-cols-2 gap-8 lg:gap-16">
-        <div className="order-2 lg:order-1">
-          <ContactForm></ContactForm>
-        </div>
-        <div className="grid grid-cols-1 gap-4 order-1 lg:order-2">
-          <p className="text-sm md:text-xl flex items-center gap-3">
-            <MdAlternateEmail
-              className="bg-secondary text-white p-2 rounded-full hover:bg-primary hover:scale-110 transition-all duration-300 cursor-pointer"
-              size={36}
-            />
-            <span>{'mizanurrahman.dev70@gmail.com'}</span>
-          </p>
-          <p className="text-sm md:text-xl flex items-center gap-3">
-            <MdPhone
-              className="bg-secondary text-white p-2 rounded-full hover:bg-primary hover:scale-110 transition-all duration-300 cursor-pointer"
-              size={36}
-            />
-            <span>{'+8801988637609'}</span>
-          </p>
-          <p className="text-sm md:text-xl flex items-center gap-3">
-            <MdHome
-              className="bg-secondary text-white p-2 rounded-full hover:bg-primary hover:scale-110 transition-all duration-300 cursor-pointer"
-              size={36}
-            />
-            <span>{"Bakshing ,jamalpur ,mymenshing "}</span>
-          </p>
-          <div className="mt-5 flex justify-center lg:justify-start items-center gap-5 lg:gap-10">
-            <Link to={"https://github.com/mizanurrahman70"} target="_blank" href="">
-              <IoLogoGithub
-                className="bg-secondary  p-3 rounded-full hover:bg-primary hover:scale-110 transition-all duration-300 text-white cursor-pointer"
-                size={48}
-              />
-            </Link>
-            <Link to={"https://www.facebook.com/mizanurrahman.dev70/"} target="_blank" href="">
-              <BiLogoLinkedin
-                className="bg-secondary p-3 rounded-full hover:bg-primary hover:scale-110 transition-all duration-300 text-white cursor-pointer"
-                size={48}
-              />
-            </Link>
-            <Link to={"https://www.linkedin.com/in/mizanur-rahman70/"} target="_blank" href="">
-              <FaXTwitter
-                className="bg-secondary p-3 rounded-full hover:bg-primary hover:scale-110 transition-all duration-300 text-white cursor-pointer"
-                size={48}
-              />
-            </Link>
+  const handleEmergencyClick = () => {
+    const subject = "Urgent: Need Assistance";
+    const body = "Hello Mizanur,\n\nI need immediate assistance with...";
+    window.location.href = `mailto:mizanurrahman.dev70@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  };
 
-            <Link to={"https://www.facebook.com/mizanurrahman.dev70/"} target="_blank" href="">
-              <FaFacebook
-                className="bg-secondary p-3 rounded-full hover:bg-primary hover:scale-110 transition-all duration-300 text-white cursor-pointer"
-                size={48}
-              />
-            </Link>
+  return (
+    <section id="contact" className="py-16 px-4 bg-gray-50">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-2">Get In Touch</h2>
+          <p className="text-gray-600 max-w-lg mx-auto">
+            Feel free to reach out for collaborations or just a friendly hello
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Email */}
+          <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow text-center">
+            <div className="flex justify-center mb-4">
+              <div className="p-3 bg-blue-100 rounded-full">
+                <MdAlternateEmail className="text-blue-600 text-2xl" />
+              </div>
+            </div>
+            <h3 className="text-xl font-semibold mb-2">Email</h3>
+            <a 
+              href="mailto:mizanurrahman.dev70@gmail.com" 
+              className="text-blue-600 hover:underline"
+            >
+              mizanurrahman.dev70@gmail.com
+            </a>
+          </div>
+
+          {/* Phone */}
+          <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow text-center">
+            <div className="flex justify-center mb-4">
+              <div className="p-3 bg-green-100 rounded-full">
+                <MdPhone className="text-green-600 text-2xl" />
+              </div>
+            </div>
+            <h3 className="text-xl font-semibold mb-2">Phone</h3>
+            <a 
+              href="tel:+8801988637609" 
+              className="text-gray-700 hover:text-green-600"
+            >
+              +880 1988 637609
+            </a>
+          </div>
+
+          {/* Location */}
+          <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow text-center">
+            <div className="flex justify-center mb-4">
+              <div className="p-3 bg-purple-100 rounded-full">
+                <MdLocationOn className="text-purple-600 text-2xl" />
+              </div>
+            </div>
+            <h3 className="text-xl font-semibold mb-2">Location</h3>
+            <p className="text-gray-700">Bakshing, Jamalpur, Mymensingh</p>
+          </div>
+        </div>
+
+        {/* Emergency Contact */}
+        <div className="mt-10 text-center">
+          <button
+            onClick={handleEmergencyClick}
+            className="flex items-center justify-center mx-auto gap-2 bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-lg transition-colors shadow-md hover:shadow-lg"
+          >
+            <MdEmergency className="text-xl" />
+            <span>Send Emergency Email</span>
+          </button>
+          <p className="text-sm text-gray-500 mt-2">
+            For urgent matters only - opens your email client with pre-filled message
+          </p>
+        </div>
+
+        {/* Social Links */}
+        <div className="mt-16 text-center">
+          <h3 className="text-xl font-semibold mb-6">Connect With Me</h3>
+          <div className="flex justify-center gap-6">
+            <a 
+              href="https://github.com/mizanurrahman70" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="p-3 bg-gray-800 text-white rounded-full hover:bg-gray-700 transition-colors"
+              aria-label="GitHub"
+            >
+              <IoLogoGithub className="text-2xl" />
+            </a>
+            
+            <a 
+              href="https://www.linkedin.com/in/mizanur-rahman70/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="p-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors"
+              aria-label="LinkedIn"
+            >
+              <IoLogoLinkedin className="text-2xl" />
+            </a>
+            
+            <a 
+              href="https://www.facebook.com/mizanurrahman.dev70/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="p-3 bg-blue-700 text-white rounded-full hover:bg-blue-800 transition-colors"
+              aria-label="Facebook"
+            >
+              <FaFacebook className="text-2xl" />
+            </a>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
