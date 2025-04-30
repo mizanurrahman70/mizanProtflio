@@ -60,7 +60,8 @@ const Contact = () => {
               </div>
             </div>
             <h3 className="text-xl font-semibold mb-2">Location</h3>
-            <p className="text-gray-700">Bakshing, Jamalpur, Mymensingh</p>
+            <p className="text-gray-700">Bakshing, Jamalpur, Mymensingh, Bangladesh</p>
+
           </div>
         </div>
 
