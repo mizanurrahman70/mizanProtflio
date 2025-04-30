@@ -1,83 +1,38 @@
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const navLink = (
-    <>
-      <li>
-        <a
-          href="#home"
-          className="hover:text-white hover:bg-secondary cursor-pointer"
-        >
-          Home
-        </a>
-      </li>
-      <li>
-        <a
-          href="#about"
-          className="hover:text-white hover:bg-secondary cursor-pointer"
-        >
-          About
-        </a>
-      </li>
-      <li>
-        <a
-          href="#skills"
-          className="hover:text-white hover:bg-secondary cursor-pointer"
-        >
-          Skills
-        </a>
-      </li>
-      <li>
-        <a
-          href="#experience"
-          className="hover:text-white hover:bg-secondary cursor-pointer"
-        >
-          Experience
-        </a>
-      </li>
-      <li>
-        <a
-          href="#projects"
-          className="hover:text-white hover:bg-secondary cursor-pointer"
-        >
-          Projects
-        </a>
-      </li>
-      <li>
-        <a
-          href="#education"
-          className="hover:text-white hover:bg-secondary cursor-pointer"
-        >
-          Education
-        </a>
-      </li>
-      <li>
-        <a
-          href="#blog"
-          className="hover:text-white hover:bg-secondary cursor-pointer"
-        >
-          Blog
-        </a>
-      </li>
-      <li>
-        <a
-          href="#contact"
-          className="hover:text-white hover:bg-secondary cursor-pointer"
-        >
-          Contact
-        </a>
-      </li>
-    </>
-  );
+  const navItems = [
+    { id: "home", label: "Home" },
+    { id: "about", label: "About" },
+    { id: "skills", label: "Skills" },
+    { id: "experience", label: "Experience" },
+    { id: "projects", label: "Projects" },
+    { id: "education", label: "Education" },
+    { id: "blog", label: "Blog" },
+    { id: "contact", label: "Contact" },
+  ];
+
+  const navLinks = navItems.map(({ id, label }) => (
+    <li key={id}>
+      <a
+        href={`#${id}`}
+        className="px-4 py-2 rounded-md text-lg font-medium transition-all duration-200 hover:text-white hover:bg-secondary"
+      >
+        {label}
+      </a>
+    </li>
+  ));
+
   return (
-    <div className="bg-base-100">
+    <div className="bg-base-100 shadow-sm sticky top-0 z-50">
       <div className="navbar container mx-auto">
+        {/* Mobile Menu Button */}
         <div className="navbar-start">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <button tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
+                className="h-6 w-6"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -85,24 +40,28 @@ const Navbar = () => {
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
                 />
               </svg>
-            </div>
+            </button>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-56"
             >
-              {navLink}
+              {navLinks}
             </ul>
           </div>
-          <Link to="/">
-            <a className="text-primary lg:text-2xl font-bold">Mizanur Rahman</a>
+
+          {/* Logo */}
+          <Link to="/" className="text-primary text-xl lg:text-2xl font-bold ml-2">
+            Mizanur Rahman
           </Link>
         </div>
+
+        {/* Desktop Menu */}
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">{navLink}</ul>
+          <ul className="menu menu-horizontal px-1 space-x-2">{navLinks}</ul>
         </div>
       </div>
     </div>

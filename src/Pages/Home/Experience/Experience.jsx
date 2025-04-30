@@ -4,66 +4,59 @@ const Experience = () => {
   const experience = experiences[0]; // Since there's only one experience, pick the first entry
 
   return (
-    <div className="my-10 container mx-auto">
-      {/* Header Section */}
-      <div className="relative mb-10 text-center">
-        <div className="w-[100px] h-[100px] bg-violet-100 rounded-full mx-auto filter blur-3xl opacity-30"></div>
-        <div className="flex items-center text-center">
-          <span className="w-24 h-[2px] bg-primary"></span>
-          <span className="bg-primary w-fit text-white p-2 px-5 text-center justify-center mx-auto text-xl rounded-md">
+    <div className="my-20 px-4 max-w-5xl mx-auto">
+    {/* Section Title */}
+    <div className="text-center mb-12 relative">
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div className="w-28 h-28 bg-green-700 opacity-10 blur-2xl rounded-full"></div>
+      </div>
+      <div className="relative z-10 inline-flex items-center space-x-4">
+        <span className="h-[2px] w-16 bg-green-700"></span>
+        <span className="px-6 py-2 bg-green-700 text-white rounded-md shadow text-lg font-medium">
           My Experience
-          </span>
-          <span className="w-24 h-[2px] bg-primary"></span>
-        </div>
-  
-        <p className="mt-2 text-gray-600">
-          Here's an overview of my professional journey and contributions.
-        </p>
+        </span>
+        <span className="h-[2px] w-16 bg-green-700"></span>
       </div>
-
-      {/* Experience Card */}
-      <div className=" mx-auto bg-white shadow-lg rounded-lg p-8">
-        {/* Title and Company */}
-        <div className="flex flex-col md:flex-row items-center md:items-start justify-around mb-6">
-          <div>
-            <h2 className="text-2xl font-bold text-primary">{experience.title}</h2>
-            <p className="text-lg text-secondary">{experience.company}</p>
-          </div>
-          <div>
-          <span className="text-xl font-bold  text-primary">{experience.duration}</span> <br />
-          <span className=" text-lg text-secondary"><span className=" text-lg text-gray-700">Start Date :</span> {experience.startDate} </span>
-          </div>
-          
-          
-        </div>
-
-        {/* Responsibilities */}
-        <ul className="mt-4 list-disc mx-auto items-center text-center list-inside space-y-2 text-gray-600">
-          {experience.responsibilities.map((resp, index) => (
-            <li key={index}>{resp}</li>
-          ))}
-        </ul>
-
-        {/* Role */}
-        <p className="mt-6 text-gray-700 text-center">
-          <span className="font-semibold">Role:</span> {experience.role}
-        </p>
-
-        {/* Project Link */}
-        {experience.projectLink && (
-          <div className="mt-6 text-center">
-            <a
-              href={experience.projectLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-primary text-white px-5 py-2 rounded-md text-sm font-semibold hover:bg-secondary transition"
-            >
-              View Project
-            </a>
-          </div>
-        )}
-      </div>
+      <p className="mt-4 text-gray-600 text-sm md:text-base">
+        Here's an overview of my professional journey and contributions.
+      </p>
     </div>
+  
+    {/* Experience Card */}
+    <div className="bg-white rounded-xl shadow-md p-8 border border-gray-100">
+      <div className="flex flex-col md:flex-row justify-between mb-2">
+        <h2 className="text-xl font-bold text-green-800">Frontend Developer</h2>
+        <div className="text-green-800 font-semibold">
+          Full-time Employee (after completing a 3-month internship)
+        </div>
+      </div>
+  
+      <div className="flex flex-col md:flex-row justify-between mb-4">
+        <div className="text-gray-700">KodeZen Ltd</div>
+        <div className="text-sm text-gray-500">
+          Start Date: August 17, 2024 (present)
+        </div>
+      </div>
+  
+      <ul className="list-disc list-inside space-y-1 text-gray-700 text-sm md:text-base">
+        <li>Developed advanced WordPress blocks for the Ablocks project, enabling users to create websites with ease.</li>
+        <li>Created blocks like Menu Block, Notice Block, Table Block, and Card Filterable Block for user-friendly website building.</li>
+        <li>Worked with React.js, PHP, and CSS to deliver seamless and dynamic user interfaces.</li>
+        <li>Collaborated with team members to optimize performance and usability for both frontend and backend functionalities.</li>
+        <li>Improved project performance, ensuring scalability and reducing loading times.</li>
+      </ul>
+  
+      <p className="mt-4 font-semibold text-gray-700">
+        Role: <span className="font-normal">React.js Developer</span>
+      </p>
+  
+      <button className="mt-6 px-5 py-2 bg-green-700 text-white rounded-md hover:bg-green-800 transition">
+        View Project
+      </button>
+    </div>
+  </div>
+  
+  
   );
 };
 
