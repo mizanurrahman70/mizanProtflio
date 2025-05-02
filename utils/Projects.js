@@ -2,10 +2,76 @@ import cozyImg from "../src/assets/Project/care-quest.jpg";
 import fixIt from "../src/assets/Project/fixIT.png";
 import journeyTract from "../src/assets/Project/jurnyTract.png";
 import commercial from "../src/assets/Project/comarsila.png";
+import commBicyclercial from "../src/assets/Project/bycaicle.png";
+import productPluseDemo from "../src/assets/Project/productPluseDemo.png";
+import mediMartImg from "../src/assets/Project/mediMartImg.png";
+
 
 export const Projects = [
   {
     id: 1,
+    name: "MediMart - Online Medicine Shop",
+    tools: ["Next.js", "TypeScript", "MongoDB", "JWT", "Stripe"],
+    role: "Full Stack Developer",
+    description:
+      "Built a secure and responsive medicine e-commerce platform with role-based authentication, prescription verification, payment integration, and admin management features.",
+    img: mediMartImg, // Replace with your actual image import or path
+    features: [
+      "User Authentication & Roles",
+      "Medicine Search & Listings",
+      "Prescription Upload & Verification",
+      "Cart & Secure Checkout",
+      "Order Tracking System",
+      "Admin Dashboard for Full Control"
+    ],
+    live: "https://medimart-rose.vercel.app/",
+    client: "https://github.com/jmjubaer/medimart-client",
+    server: "https://github.com/mizanurrahman70/mediTrust-server"
+  },
+  
+  {
+    id: 2,
+    name: "Bicycle Store - E-commerce Platform",
+    tools: ["React.js", "Node.js", "MongoDB", "JWT", "Stripe"],
+    role: "Full Stack Developer",
+    description:
+      "Developed a responsive e-commerce platform for bicycles with role-based authentication, product management, and secure online payment integration.",
+    img: commBicyclercial, // Replace with your actual image import or path
+    features: [
+      "User Registration & Login",
+      "Product Search & Filtering",
+      "Secure Checkout with Stripe",
+      "Admin & User Dashboards",
+      "Inventory & Order Management"
+    ],
+    live: "https://bi-cycle-client-six.vercel.app/      ",
+    client: "https://github.com/mizanurrahman70/bicycle-clint-4",
+    server: "https://github.com/mizanurrahman70/bicycle-server-4"
+  },
+  {
+    id: 3,
+    name: "ProductPluse - Product Hunt Inspired Platform",
+    tools: ["React.js", 'Node Js',"MongoDB", "Stripe"],
+    role: "Full Stack Developer",
+    description:
+      "Developed a Product Hunt-style platform where users can post, discover, and explore tech products with clean UI, secure payments, and review features.",
+    img: productPluseDemo, // Replace with your actual image path or import
+    features: [
+      "Product Listing Page",
+      "Real-Time Posting",
+      "Responsive Design",
+      "Maker Profiles",
+      "Launch Tracking",
+      "Secure Payment System",
+      "Product Reviews & Ratings",
+      "Admin Dashboard for Product Management"
+    ],
+    live: "https://productpulse-5f3ec.web.app",
+    client: "https://github.com/mizanurrahman70/ProductPulse-Client",
+    server: "https://github.com/mizanurrahman70/productpluse-server"
+  },
+  {
+    id: 4,
     name: "Fix It Genius",
     tools: ["React.js", "Node.js", "Firebase", "MongoDB"],
     role: "Full Stack Developer",
@@ -23,7 +89,7 @@ export const Projects = [
     server: "https://github.com/mizanurrahman70/Fix-It-Genius-server-side",
   },
   {
-    id: 2,
+    id: 5,
     name: "Journey OfTrack",
     tools: ["React.js", "Node.js", "Firebase", "MongoDB"],
     role: "Full Stack Developer",
@@ -40,7 +106,7 @@ export const Projects = [
     server: "https://github.com/mizanurrahman70/Journey-OfTrack-server",
   },
   {
-    id: 3,
+    id: 6,
     name: "South Travel - Tourism Management Website",
     tools: ["React.js", "Firebase", "MongoDB"],
     role: "Full Stack Developer",

@@ -30,6 +30,16 @@ const Project = () => {
               <div className="card-body">
                 <h2 className=" text-base font-semibold">{project.name}</h2>
                 <p className="text-sm">{project.description}</p>
+                <ul className="flex gap-2">
+                  <li className=" font-semibold">Tools:</li>
+                  {project.tools.map((tool, toolIndex) => (
+                    <li key={toolIndex}>&#34;{tool}&#34;</li>
+                  ))}
+                </ul>
+                <p>
+                  <span className=" font-semibold">My Role:</span>{" "}
+                  {project.role}
+                </p>
                 <div className="flex items-center gap-2">
                   <Link to={project.client}>
                     <button className="btn btn-primary btn-sm font-normal text-white border-none hover:bg-secondary hover:scale-110 transition-all duration-300 cursor-pointer">
@@ -42,16 +52,6 @@ const Project = () => {
                     </button>
                   </Link>
                 </div>
-                <ul className="flex gap-2">
-                  <li className=" font-semibold">Tools:</li>
-                  {project.tools.map((tool, toolIndex) => (
-                    <li key={toolIndex}>&#34;{tool}&#34;</li>
-                  ))}
-                </ul>
-                <p>
-                  <span className=" font-semibold">My Role:</span>{" "}
-                  {project.role}
-                </p>
                 <div className=" absolute top-4 right-4">
                   <Link
                     to={project.live}
@@ -59,7 +59,7 @@ const Project = () => {
                     rel="noopener noreferrer"
                   >
                     <button className="btn btn-sm border-none bg-secondary text-white hover:bg-primary hover:scale-110 transition-all duration-300 cursor-pointer">
-                      Live
+                      Live Link
                     </button>
                   </Link>
                 </div>
