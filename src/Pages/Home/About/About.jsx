@@ -12,7 +12,7 @@ const About = () => {
       <div className="lg:hidden flex justify-center my-5 lg:py-8">
         <div className="flex  items-center">
           <span className="w-24 h-[2px] bg-primary"></span>
-          <span className=" bg-primary w-fit text-white p-2 px-5 text-xl rounded-md">
+          <span className=" bg-primary w-fit text-white p-2 px-5 text-xl  rounded-md">
             ABOUT ME
           </span>
           <span className="w-24 h-[2px] bg-primary"></span>
@@ -20,7 +20,7 @@ const About = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center lg:grid-cols-2 gap-8 lg:gap-16">
         <div className="order-2 lg:order-1">
-          <p className="font-medium mb-5 text-secondary text-xl uppercase text-center lg:text-left md:text-left">
+          <p className="font-bold  mb-5 text-primary text-2xl uppercase text-center lg:text-left md:text-left ">
             Who I am?
           </p>
           <p className="text-center lg:text-left text-sm lg:text-lg md:text-left">
@@ -31,9 +31,15 @@ const About = () => {
             solving complex problems are my driving forces.
           </p>
         </div>
-        <div className="flex justify-center order-1 lg:order-2">
-          <img className="lg:h-[450px] rounded-2xl" src={bannerimg} alt="" />
-        </div>
+       <div className="flex  order-1 lg:order-2 relative">
+  <img className="lg:h-[450px] rounded-2xl" src={bannerimg} alt="Banner" />
+  
+  {/* Experience Badge */}
+  <div className="absolute bottom-5  ml-4 bg-white shadow-lg rounded-lg px-4 py-2 flex flex-row items-center space-x-2">
+    <span className="text-primary text-xl font-semibold">1+</span> 
+    <span className="text-gray-600 text-sm capitalize">Years of Experience</span>
+  </div>
+</div>
       </div>
     </div>
   );
