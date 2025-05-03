@@ -5,7 +5,7 @@ import { FaGraduationCap } from "react-icons/fa";
 
 const Education = () => {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto mt-5">
       <div className="flex justify-center">
         <div className="flex items-center">
           <span className="w-24 h-[2px] bg-primary"></span>
@@ -19,7 +19,7 @@ const Education = () => {
         <section className="lg:w-1/2 md:w-1/2">
           <AnimationLottie className="lg:w-3/5" animationData={lottieFile} />
         </section>
-        <section className="lg:w-1/2 md:w-1/2 grid grid-cols-1 gap-4">
+        <section className="lg:w-1/2 md:w-1/2 grid grid-cols-1 gap-4 mt-6">
      {
       educations.map((edu)=>(
         <div
@@ -30,7 +30,7 @@ const Education = () => {
                 <FaGraduationCap className="lg:text-5xl text-3xl"></FaGraduationCap>
                 <div>
                   <p className="lg:text-xl font-medium text-sm">
-                    {'Higher Secondary School Certificate'}
+                    {edu.title}
                   </p>
                   <p className=" text-sm">{edu.institution}</p>
                 </div>

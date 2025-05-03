@@ -59,6 +59,13 @@ const Banner = () => {
           >
             Get Resume <MdDownload />
           </a>
+          <a
+            href="https://drive.google.com/file/d/1FQc555K7q127pY8Gy8InTTomTFAGLKGG/view?usp=drivesdk&usp=embed_facebook"
+            download
+            className="flex gap-2 justify-center items-center btn border-none btn-primary rounded-full text-white hover:bg-secondary hover:scale-110 transition-all duration-300 cursor-pointer"
+          >
+            Preview Resume <MdDownload />
+          </a>
         </section>
       </div>
       <div className="  lg:flex justify-center">
@@ -93,14 +100,21 @@ const Banner = () => {
                 <span className="text-gray-400">{`['`}</span>
                 <span className="text-amber-300">React</span>
                 <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">Next</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">Redux</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">Type Script</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">Gutenberg </span>
+                <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">Express</span>
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">MongoDB</span>
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">Node JS</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Firebase</span>
-                <span className="text-gray-400">{"'],"}</span>
+              
               </div>
               <div>
                 <span className="ml-4 lg:ml-8 mr-2 text-white">
