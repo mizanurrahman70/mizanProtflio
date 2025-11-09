@@ -28,9 +28,9 @@ const Home = () => {
       <div id="education">
         <Education />
       </div>
-      <div id="blog">
+      {/* <div id="blog">
         <Blog />
-      </div>
+      </div> */}
       <div id="contact">
         <Contact />
       </div>
