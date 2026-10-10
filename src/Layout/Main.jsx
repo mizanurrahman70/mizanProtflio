@@ -1,17 +1,21 @@
 import { Outlet } from "react-router-dom";
-import Navbar from "../Shared/Navbar/Navbar";
-import Footer from "../Shared/Footer/Footer";
-import ScrollToTopButton from "../Components/ScrollTop/ScrollToTopButton";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
-const Main = () => {
-  return (
-    <div className="font-openSans">
-      <Navbar></Navbar>
-      <Outlet></Outlet>
-      <Footer></Footer>
-      <ScrollToTopButton></ScrollToTopButton>
-    </div>
-  );
-};
+const Main = () => (
+  <>
+    <a
+      href="#about"
+      className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-full focus:bg-accent focus:px-4 focus:py-2 focus:text-ink"
+    >
+      Skip to content
+    </a>
+    <Navbar />
+    <main>
+      <Outlet />
+    </main>
+    <Footer />
+  </>
+);
 
 export default Main;

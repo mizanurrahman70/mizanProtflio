@@ -2,6 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --ink: 10 12 16;
+  --surface: 18 22 29;
+  --line: 255 255 255;
+  --fg: 236 238 241;
+  --muted: 152 161 173;
+  --accent: 126 224 168;
+  color-scheme: dark;
+}
+
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  @apply bg-ink text-fg font-sans antialiased;
+}
+
+::selection {
+  background: rgb(var(--accent) / 0.3);
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+  }
+  .eyebrow {
+    @apply font-mono text-xs uppercase tracking-[0.2em] text-accent;
+  }
+  .section-title {
+    @apply font-display text-3xl font-semibold tracking-tight sm:text-4xl;
+  }
+  .card {
+    @apply rounded-2xl border border-line/[0.08] bg-surface/60;
+  }
+  .chip {
+    @apply inline-flex items-center rounded-full border border-line/10 px-3 py-1 font-mono text-[11px] text-muted;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-medium transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-ink;
+  }
+  .btn-primary {
+    @apply btn bg-accent text-ink hover:bg-accent/85;
+  }
+  .btn-ghost {
+    @apply btn border border-line/15 text-fg hover:border-accent/60 hover:text-accent;
+  }
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
 }

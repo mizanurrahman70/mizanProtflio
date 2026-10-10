@@ -3,26 +3,20 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      colors: {
+        ink: "rgb(var(--ink) / <alpha-value>)",
+        surface: "rgb(var(--surface) / <alpha-value>)",
+        line: "rgb(var(--line) / <alpha-value>)",
+        fg: "rgb(var(--fg) / <alpha-value>)",
+        muted: "rgb(var(--muted) / <alpha-value>)",
+        accent: "rgb(var(--accent) / <alpha-value>)",
+      },
       fontFamily: {
-        openSans: "'Open Sans', sans-serif ",
-        Playfair: "'Playfair Display', serif",
+        sans: ["Inter", "system-ui", "sans-serif"],
+        display: ["'Space Grotesk'", "Inter", "sans-serif"],
+        mono: ["'JetBrains Mono'", "ui-monospace", "monospace"],
       },
     },
   },
-  plugins: [require("daisyui")],
-  daisyui: {
-    themes: [
-      {
-        mytheme: {
-          primary: "#3f6b3b",
-          secondary: "#0B0E32",
-          accent: "#FFD700",
-          neutral: "#0d1224",
-          "base-100": "#ffffff",
-        },
-      },
-      "light",
-      "synthwave",
-    ],
-  },
+  plugins: [],
 };
