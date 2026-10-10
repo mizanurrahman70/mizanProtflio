@@ -72,14 +72,21 @@ const Hero = () => (
               alt="Portrait of Md Mizanur Rahman"
               className="h-full w-full object-cover object-[50%_25%]"
             />
-            <div aria-hidden className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ink/80 to-transparent" />
-            <span className="absolute bottom-4 left-4 inline-flex items-center gap-1.5 rounded-full bg-ink/70 px-3 py-1.5 text-xs text-fg backdrop-blur">
-              <HiOutlineLocationMarker className="text-accent" /> Jamalpur, Bangladesh
-            </span>
-          </div>
-          <div className="absolute -left-6 top-8 hidden rounded-2xl border border-line/10 bg-ink/85 px-4 py-3 shadow-2xl backdrop-blur sm:block">
-            <p className="font-mono text-[10px] uppercase tracking-widest text-muted">Currently</p>
-            <p className="mt-0.5 text-sm font-medium">Software Engineer @ Traideas</p>
+            <div aria-hidden className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-ink/90 via-ink/40 to-transparent" />
+            <div className="absolute inset-x-3 bottom-3 rounded-2xl border border-line/10 bg-ink/70 px-4 py-3 backdrop-blur-md sm:inset-x-4 sm:bottom-4">
+              <p className="font-mono text-[10px] uppercase tracking-widest text-muted">Currently</p>
+              <a
+                href="https://traideas.com/"
+                target="_blank"
+                rel="noreferrer"
+                className="mt-0.5 block text-sm font-medium text-fg hover:text-accent"
+              >
+                Junior Software Engineer @ Traideas
+              </a>
+              <p className="mt-2 flex items-center gap-1.5 border-t border-line/10 pt-2 text-xs text-muted">
+                <HiOutlineLocationMarker className="text-accent" /> Jamalpur, Bangladesh
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -88,7 +95,7 @@ const Hero = () => (
     <div className="container-x relative mt-16 sm:mt-20">
       <dl className="grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-line/[0.08] bg-line/[0.08] lg:grid-cols-4">
         {stats.map((s) => (
-          <div key={s.label} className="flex flex-col-reverse bg-ink px-5 py-6 sm:px-6">
+          <div key={s.label} className="flex flex-col-reverse justify-end bg-ink px-5 py-6 sm:px-6">
             <dt className="mt-1 text-sm text-muted">{s.label}</dt>
             <dd className="font-display text-3xl font-semibold text-fg sm:text-4xl">{s.value}</dd>
           </div>
