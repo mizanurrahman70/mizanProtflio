@@ -12,13 +12,23 @@
   color-scheme: dark;
 }
 
+:root[data-theme="light"] {
+  --ink: 247 248 250;
+  --surface: 255 255 255;
+  --line: 15 23 42;
+  --fg: 17 24 39;
+  --muted: 82 92 107;
+  --accent: 4 120 87;
+  color-scheme: light;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
 }
 
 body {
-  @apply bg-ink text-fg font-sans antialiased;
+  @apply bg-ink text-fg font-sans antialiased transition-colors duration-300;
 }
 
 ::selection {
@@ -27,7 +37,7 @@ body {
 
 @layer components {
   .container-x {
-    @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+    @apply mx-auto w-full max-w-[1600px] px-4 sm:px-6 lg:px-10 xl:px-16;
   }
   .eyebrow {
     @apply font-mono text-xs uppercase tracking-[0.2em] text-accent;

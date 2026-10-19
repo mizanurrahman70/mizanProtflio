@@ -25,7 +25,7 @@ export const profile = {
 export const stats = [
   { value: "2+", label: "Years shipping production code" },
   { value: "7+", label: "Products contributed to at Kodezen" },
-  { value: "60+", label: "Bugs resolved in aBlocks" },
+  { value: "60+", label: "Blocks built & improved in aBlocks" },
   { value: "3", label: "Products owned end-to-end" },
 ];
 
@@ -90,7 +90,7 @@ export const experience = [
       "Built new Gutenberg blocks from scratch: Table, Social Share, Notice and Filterable Gallery.",
       "Improved the Menu Block and its advanced features for usability and extensibility.",
       "Implemented Container, Grid and Flex layout systems for flexible page building.",
-      "Resolved 60+ bugs and shipped numerous feature improvements across the block library.",
+      "Worked on 60+ blocks across the library — creating new blocks and improving existing ones.",
     ],
     tech: ["React", "WordPress", "Gutenberg", "JavaScript"],
   },
@@ -119,7 +119,7 @@ export const featured = [
     name: "aBlocks",
     kind: "Gutenberg block plugin",
     description:
-      "A public WordPress block library. Built new blocks and the Container / Grid / Flex layout systems, and fixed 60+ bugs.",
+      "A public WordPress block library. Created and improved 60+ blocks, including the Container / Grid / Flex layout systems.",
     tags: ["Gutenberg", "React", "WordPress"],
     link: "https://ablocks.pro/",
     ownership: "Core contributor",

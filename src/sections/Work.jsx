@@ -108,7 +108,7 @@ const Work = () => (
       intro="Professional work first: live platforms and plugins with real users. Below that, full-stack projects I built on my own."
     />
 
-    <div className="grid gap-5 md:grid-cols-2">
+    <div className="grid gap-5 md:grid-cols-2 2xl:grid-cols-4">
       {featured.map((item, i) => (
         <FeaturedCard key={item.name} item={item} index={i} />
       ))}
@@ -129,7 +129,7 @@ const Work = () => (
       </a>
     </Reveal>
 
-    <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+    <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
       {sideProjects.map((p, i) => (
         <ProjectCard key={p.name} project={p} index={i} />
       ))}

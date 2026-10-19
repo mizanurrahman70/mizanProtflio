@@ -41,10 +41,10 @@ const Experience = () => (
                 <p className="shrink-0 font-mono text-xs text-muted sm:pt-1.5">{job.period}</p>
               </header>
 
-              <p className="mt-4 text-fg/80">{job.summary}</p>
+              <p className="mt-4 max-w-4xl text-fg/80">{job.summary}</p>
 
               {job.points.length > 0 && (
-                <ul className="mt-5 space-y-2.5">
+                <ul className="mt-5 max-w-4xl space-y-2.5">
                   {job.points.map((pt) => (
                     <li key={pt} className="flex gap-3 text-[15px] leading-relaxed text-muted">
                       <span aria-hidden className="mt-2.5 h-1 w-1 shrink-0 rounded-full bg-accent" />

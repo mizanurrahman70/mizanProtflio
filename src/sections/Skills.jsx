@@ -23,7 +23,7 @@ const Skills = () => (
     <div className="container-x">
       <SectionHeader index="04" eyebrow="Skills" title="The toolkit." />
 
-      <div className="grid gap-5 md:grid-cols-2">
+      <div className="grid gap-5 md:grid-cols-2 2xl:grid-cols-4">
         {skills.map((group, i) => (
           <Reveal key={group.group} delay={(i % 2) * 100} className="card p-6 sm:p-8">
             <h3 className="font-mono text-xs uppercase tracking-[0.2em] text-muted">{group.group}</h3>

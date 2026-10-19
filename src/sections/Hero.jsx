@@ -5,7 +5,7 @@ import portrait from "../assets/mizan-profile.jpg";
 
 const gridStyle = {
   backgroundImage:
-    "linear-gradient(rgb(255 255 255) 1px, transparent 1px), linear-gradient(90deg, rgb(255 255 255) 1px, transparent 1px)",
+    "linear-gradient(rgb(var(--line)) 1px, transparent 1px), linear-gradient(90deg, rgb(var(--line)) 1px, transparent 1px)",
   backgroundSize: "56px 56px",
   maskImage: "radial-gradient(ellipse at top, black 30%, transparent 75%)",
   WebkitMaskImage: "radial-gradient(ellipse at top, black 30%, transparent 75%)",
@@ -23,7 +23,7 @@ const Hero = () => (
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-60 motion-reduce:hidden" />
             <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
           </span>
-          Open to new opportunities
+          React · Next.js · TypeScript
         </div>
 
         <h1 className="mt-6 font-display text-[2.6rem] font-bold leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
@@ -63,7 +63,7 @@ const Hero = () => (
         </div>
       </div>
 
-      <div className="order-1 mx-auto w-full max-w-[300px] sm:max-w-[360px] lg:order-2 lg:max-w-none">
+      <div className="order-1 mx-auto w-full max-w-[300px] sm:max-w-[360px] lg:order-2 lg:mr-0 lg:max-w-[480px]">
         <div className="relative">
           <div aria-hidden className="absolute -inset-3 rounded-[2rem] border border-line/[0.06]" />
           <div className="relative aspect-[4/5] overflow-hidden rounded-[1.6rem] border border-line/10 bg-surface">
